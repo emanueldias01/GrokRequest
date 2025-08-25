@@ -7,6 +7,10 @@ public class GrokRequest {
     private String model;
     private boolean stream;
 
+    public GrokRequest(){
+
+    }
+
     public GrokRequest(List<GrokMessage> messages, String model, boolean stream) {
         this.messages = messages;
         this.model = model;
@@ -23,5 +27,17 @@ public class GrokRequest {
 
     public boolean isStream() {
         return stream;
+    }
+
+    public void setMessages(List<GrokMessage> messages) {
+        this.messages = messages;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setStream(boolean stream) {
+        this.stream = stream;
     }
 }
